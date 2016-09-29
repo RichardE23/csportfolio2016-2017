@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Me Page </title>
+        <style>
+            #top-of-page{
+                text-align:center;
+                color:black;
+            }
+            body{
+                background-image:url("http://i.imgur.com/i0oCo.png");
+                background-size:1300px;
+            }
+            #navbar a{
+                text-decoration:none;
+                color: White;
+                font-size:15px;
+            }
+            #navbar li{
+                Display:inline;
+                text-decoration:none;
+                padding:10px;
+                border-style:groove;
+                background-image:url("https://thumbs.dreamstime.com/t/coucher-du-soleil-brouill-au-dessus-des-montagnes-50927336.jpg");
+                background-size:200px;
+                }
+            .front{
+                size:500px;
+            }
+            .frontRight{
+                size:500px;
+                float:right;
+            }
+            .back{
+                font-size:20px;
+                width:475px;
+                height:300px;
+            }
+            .backRight{
+                font-size:25px;
+                width:475px;
+                height:300px;
+                float:right;
+            }
+        </style>
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+    </head>
+    <body>
+        <div id="top-of-page">
+            <ul id="navbar">
+                <li><a href="aboutMe.html"><strong>About Me Page</strong></a></li>
+                <li><a href="hardware.html"><strong>Hardware Page</strong></a></li>
+                <li><a href="howTo.html"><strong>How To Page</strong></a></li>
+                <li><a href=""><strong>Calulator Page</strong></a></li>
+                <li><a href=""><strong>To Do List Page</strong></a></li>
+                <li><a href=""><strong>Vindinium Page</strong></a></li>
+                <li><a href=""><strong>Big Project Page</strong></a></li>
+            </ul>
+            <h1>About Me</h1>
+            <p>
+                This is my about me page. In this page there will be a lot of information about who I am, what I like, hobbies
+                and other interesting thing about me.<br>
+                Feel free to check out each picture by clicking them and check out my other web pages linked above
+            </p>
+        </div>
+        <div id="cardOne"> 
+            <div class="front"> 
+                <img src=" http://2.bp.blogspot.com/-ljuhyq4aiQU/UzUSqpzp0sI/AAAAAAAADfs/Yg1p0yhDCM0/s1600/You+coder+so+Be+Happy+by+PCbots.jpg" 
+                width="475px" height="300px">
+            </div> 
+            <div class="back">
+                <p>
+                    I am a Junior at Summit Prep High. A couple of places that<br>
+                    I have been in my life are Mexico, New York, Los angeles, <br>
+                    Washington D.C. and Reno Nevada. Some other pictures <br>
+                    here will talk more in detail about my hobbies and other <br>
+                    facts about me
+                </p>
+            </div> 
+        </div>
+        
+        <div id="cardThree">
+            <div class="frontRight">
+                <img src="https://i.kinja-img.com/gawker-media/image/upload/mlxqnus8jcplllytuz4q.png"
+                width="475px" height="300px">
+            </div>
+            <!--
+            <div="backRight">
+                <p>
+                    Ever Since I was a little kid I liked to play videogames.<br>
+                    When I was six I got my first video game which was Yoshi's<br>
+                    World, which was for the Gameboy Advanced. As I got older<br>
+                    I started playing with more consoles. In my life I have<br>
+                    played with the playstation one and two, the wii,<br>
+                    gameboy color, gameboy avanced and now the Play Station 4<br>
+                </p>
+            </div>
+            -->
+        </div>
+        
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        
+        <div id="cardTwo">
+            <div class="front">
+                <img src="https://trustworks.files.wordpress.com/2012/12/microphone-and-headphones.jpg"
+                width="475px" height="300px">
+            </div>
+            <div class="back">
+                <p>
+                    A hobby that I have and love to do is rapping. I love to <br> 
+                    write rhymes and put them together, mainly because I see <br>
+                    rap as a puzzle with words. I once performed a rap in <br>
+                    front of my entire grade level. I mainly like rap <br>
+                    because it allows to express myself in a way that <br>
+                    challenges me
+                    <br><br><br><br><br><br>
+                </p>
+            </div>
+        </div>
+        <script>
+             $("#cardOne").flip({
+                trigger: 'click'
+            });
+            $("#cardOne").flip({
+            axis: 'x',
+            });
+             $("#cardTwo").flip({
+                trigger: 'click'
+            });
+            $("#cardTwo").flip({
+            axis: 'x',
+            });
+            $("#cardThree").flip({
+                trigger: 'click'
+            });
+            $("#cardThree").flip({
+            axis: 'x',
+            });
+        </script>
+    </body>
+</html>
+
+
+<!-- navbar shortcut: ul#navbar>li*6-->
+<!-- coding quote: http://2.bp.blogspot.com/-ljuhyq4aiQU/UzUSqpzp0sI/AAAAAAAADfs/Yg1p0yhDCM0/s1600/You+coder+so+Be+Happy+by+PCbots.jpg-->
