@@ -4,8 +4,8 @@
         <title>Hardware Page</title>
         <style>
             body{
-                background-image:url("https://www.colourbox.com/preview/8224178-black-abstract-texture-seamless-vector-texture.jpg");
-                background-size:1300px;
+                background-image:url("http://www.brightonbusinessbuilders.com/wp-content/uploads/2015/04/honeycomb1.png");
+                background-size:1370px;
             }
             #navbar a{
                 text-decoration:none;
@@ -24,7 +24,18 @@
                 text-align:center;
                 color:white;
             }
+            p{
+                font-size:20px;
+            }
+            .front{
+                
+            }
+            .back{
+                color:white;
+            }
         </style>
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
     </head>
     <body>
          <div id="top-of-page">
@@ -32,12 +43,64 @@
                 <li><a href="aboutMe.html"><strong>About Me Page</strong></a></li>
                 <li><a href="hardware.html"><strong>Hardware Page</strong></a></li>
                 <li><a href="howTo.html"><strong>How To Page</strong></a></li>
-                <li><a href=""><strong>Calulator Page</strong></a></li>
+                <li><a href=""><strong>Calculator Page</strong></a></li>
                 <li><a href=""><strong>To Do List Page</strong></a></li>
                 <li><a href=""><strong>Vindinium Page</strong></a></li>
                 <li><a href=""><strong>Big Project Page</strong></a></li>
             </ul>
-            <h1>Hardware Page</h1>
+            <h1>
+                Hardware Page
+            </h1>
+            <p>
+                This is my harware page and this page talks about what makes a computer and how these parts affect the compter.
+            </p>
         </div>
+        <div id="motherBoard">
+            <div class="front">
+                <img src="http://i847.photobucket.com/albums/ab32/flint117/motherboard.png:original"
+                width="375px" hieght="350px">
+            </div>
+            <div class="back">
+                <p>
+                    This piece of hardware is called a motherboard.<br>
+                    It contains the principal components of a computer<br>
+                    or any other device.
+                </p>
+            </div>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <div id="cpu">
+            <div class="front">
+                <img src="http://media.gamersnexus.net/images/media/2013/sales/cpu-intel-4770k.png"
+                width="375px" hieght="350px">
+            </div>
+            <div class="back">
+                <p>
+                    This is the CPU is known as the brain of the<br>
+                    computer. This is where most calculations <br>
+                    occur
+                </p>
+            </div>
+        </div>
+         <br><br><br><br><br><br><br><br><br><br><br><br>
+         <div id="ram">
+             <div class="front">
+                 
+             </div>
+         </div>
+        <script>
+            $("#motherBoard").flip({
+                trigger: 'click'
+            });
+            $("#motherBoard").flip({
+                axis: 'y',
+            });
+            $("#cpu").flip({
+                trigger: 'click'
+            });
+            $("#cpu").flip({
+                axis: 'y',
+            });
+        </script>
     </body>
 </html>
