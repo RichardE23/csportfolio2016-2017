@@ -52,10 +52,10 @@
                 <li><a href="aboutMe.html"><strong>About Me Page</strong></a></li>
                 <li><a href="hardware.html"><strong>Hardware Page</strong></a></li>
                 <li><a href="howTo.html"><strong>How To Page</strong></a></li>
-                <li><a href=""><strong>Calulator Page</strong></a></li>
-                <li><a href=""><strong>To Do List Page</strong></a></li>
-                <li><a href=""><strong>Vindinium Page</strong></a></li>
-                <li><a href=""><strong>Big Project Page</strong></a></li>
+                <li><a href="calc.html"><strong>Calulator Page</strong></a></li>
+                <li><a href="toDo.html"><strong>To Do List Page</strong></a></li>
+                <li><a href="vind.html"><strong>Vindinium Page</strong></a></li>
+                <li><a href="bigProject.html"><strong>Big Project Page</strong></a></li>
             </ul>
             <h1>About Me</h1>
             <p>
@@ -79,7 +79,7 @@
                 </p>
             </div> 
         </div>
-        
+        <!--The code below was supposed to be a flipabble image but I could not get it to work. -->
         <div id="cardThree">
             <div class="frontRight">
                 <img src="https://i.kinja-img.com/gawker-media/image/upload/mlxqnus8jcplllytuz4q.png"
@@ -130,6 +130,7 @@
             });
             $("#cardTwo").flip({
             axis: 'x',
+            reverse:true,
             });
             $("#cardThree").flip({
                 trigger: 'click'

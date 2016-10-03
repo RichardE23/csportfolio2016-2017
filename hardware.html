@@ -4,7 +4,7 @@
         <title>Hardware Page</title>
         <style>
             body{
-                background-image:url("http://www.brightonbusinessbuilders.com/wp-content/uploads/2015/04/honeycomb1.png");
+                background-image:url("http://eskipaper.com/images/red-honeycomb-wallpaper-1.jpg");
                 background-size:1370px;
             }
             #navbar a{
@@ -27,15 +27,54 @@
             p{
                 font-size:20px;
             }
-            .front{
-                
+            #clickablePics > *{
+                Display:inline-block;
+                vertical-align:middle;
             }
-            .back{
-                color:white;
+            .partOne > *{
+                display:inline-block;
+                vertical-align:middle;
             }
+            .partTwo > *{
+                display:inline-block;
+                vertical-align:middle;
+            }
+            .partThree > *{
+                 display:inline-block;
+                vertical-align:middle;
+            }
+           p{
+               color:white;
+               text-align:center; 
+           }
+           .partFour > *{
+               display:inline-block;
+               vertical-align:middle;
+           }
+           .partFive > *{
+               display:inline-block;
+               vertical-align:middle; 
+           }
+           .partSix > *{
+               display:inline-block;
+               vertical-align:middle;
+           }
+           .partSeven > *{
+               display:inline-block;
+               vertical-align:middle;
+           }
+           .partEight > *{
+               display:inline-block;
+               vertical-align:middle;
+           }
+           h2{
+               color:white;
+               text-align:center;
+           }
+           .odd{
+               border-style:groove;
+           }
         </style>
-        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-        <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
     </head>
     <body>
          <div id="top-of-page">
@@ -43,64 +82,130 @@
                 <li><a href="aboutMe.html"><strong>About Me Page</strong></a></li>
                 <li><a href="hardware.html"><strong>Hardware Page</strong></a></li>
                 <li><a href="howTo.html"><strong>How To Page</strong></a></li>
-                <li><a href=""><strong>Calculator Page</strong></a></li>
-                <li><a href=""><strong>To Do List Page</strong></a></li>
-                <li><a href=""><strong>Vindinium Page</strong></a></li>
-                <li><a href=""><strong>Big Project Page</strong></a></li>
+                <li><a href="calc.html"><strong>Calulator Page</strong></a></li>
+                <li><a href="toDo.html"><strong>To Do List Page</strong></a></li>
+                <li><a href="vind.html"><strong>Vindinium Page</strong></a></li>
+                <li><a href="bigProject.html"><strong>Big Project Page</strong></a></li>
             </ul>
             <h1>
                 Hardware Page
             </h1>
             <p>
-                This is my harware page and this page talks about what makes a computer and how these parts affect the compter.
+                This is my harware page and this page talks about what makes a computer and how these 
+                parts affect the compter.
             </p>
         </div>
-        <div id="motherBoard">
-            <div class="front">
+    <div class="odd">
+        <h2>
+            Mother Board
+        </h2>
+        <div class="partOne">
+            <div id="motherBoard">
                 <img src="http://i847.photobucket.com/albums/ab32/flint117/motherboard.png:original"
-                width="375px" hieght="350px">
-            </div>
-            <div class="back">
+                width="275px" hieght="250px">
+                </div>
                 <p>
-                    This piece of hardware is called a motherboard.<br>
-                    It contains the principal components of a computer<br>
-                    or any other device.
+                    This piece of hardware is called a motherboard.It contains the principal components
+                    of a computer or any other device.
                 </p>
-            </div>
         </div>
-        <br><br><br><br><br><br><br><br><br><br><br><br>
-        <div id="cpu">
-            <div class="front">
+    </div>
+        <h2>
+            CPU
+        </h2>
+        <div class="partTwo">
+            <div id="cpu">
                 <img src="http://media.gamersnexus.net/images/media/2013/sales/cpu-intel-4770k.png"
-                width="375px" hieght="350px">
+                width="275px" hieght="250px">
             </div>
-            <div class="back">
                 <p>
-                    This is the CPU is known as the brain of the<br>
-                    computer. This is where most calculations <br>
-                    occur
+                    This is the CPU is known as the brain of the computer. This is where most 
+                    calculations occur
                 </p>
-            </div>
         </div>
-         <br><br><br><br><br><br><br><br><br><br><br><br>
-         <div id="ram">
-             <div class="front">
-                 
+    <div class="odd">
+         <h2>
+            RAM
+        </h2>
+         <div class="partThree">
+             <div id="ram">
+                 <img src="http://www.techspot.com/images2/downloads/topdownload/2014/12/ram.png"
+                 width="275px" hieght="250px">
              </div>
+                 <p>
+                     This here is RAM, stands for random access memory.This<br>
+                     is one of the most common type of memory found in computers
+                 </p>
          </div>
-        <script>
-            $("#motherBoard").flip({
-                trigger: 'click'
-            });
-            $("#motherBoard").flip({
-                axis: 'y',
-            });
-            $("#cpu").flip({
-                trigger: 'click'
-            });
-            $("#cpu").flip({
-                axis: 'y',
-            });
-        </script>
+    </div>
+         <h2>
+             Hard Drive
+         </h2>
+         <div class="partFour">
+             <div id="hardDrive">
+                 <img src="http://popcorntimeforios.com/wp-content/uploads/2015/12/Hard-Drive-Inspector-Pro-4.35-Logo.png"
+                 width="275px" height="250px">
+             </div>
+             <p>
+                 The hard drive is the primary storage unit for a computer<br>
+                 
+             </p>
+         </div>
+    <div class="odd">
+         <h2>
+            BUS
+         </h2>
+         <div class="partFive">
+             <div id="BUS">
+                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Computer_system_bus.svg/2000px-Computer_system_bus.svg.png"
+                 width="275px" height="250px">
+             </div>
+             <p>
+                  BUS is a communication system that transfers data between<br>
+                  components inside a computer, or between computers.
+             </p>
+         </div>
+    </div>
+         <h2>
+            Keyboard
+         </h2>
+         <div class="partSix">
+             
+             <div id="keyBoard">
+                     <img src="http://www.qpad.com/uploads/images/Shop-Template/Keyboards/MK50/mk50-overview-left.trans.png"
+                     width="275px" height="250px">
+             </div>
+             <p>
+                 A device which uses an arrangement of buttons or keys 
+                 to act as a electronic switch. 
+             </p>
+         </div>
+    <div class="odd">
+         <h2>
+             Computer Mouse
+         </h2>
+         <div class="partSeven">
+             <div id="Mouse">
+                 <img src="http://res.freestockphotos.biz/pictures/15/15220-illustration-of-a-blue-computer-mouse-pv.png"
+                 width="275px" height="250px">
+             </div>
+             <p>
+                  A mouse is an input device that is most often used with a personal computer. 
+             </p>
+         </div>
+    </div>
+         <h2>
+             Monitor
+         </h2>
+         <div class="partEight">
+             
+             <div id="monitor">
+                 <img src="http://www.stardock.com/products/fences/images/features/updated/monitor.png"
+                 width="275px" height="250px">
+             </div>
+             <p>
+                 A display screen used to provide visual output from a computer
+             </p>
+         </div>
     </body>
 </html>
