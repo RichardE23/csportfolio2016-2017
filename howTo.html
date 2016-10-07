@@ -6,11 +6,12 @@
         </title>
         <style>
             body{
-                background-image:url(http://wallpapersonthe.net/wallpapers/b/1920x1080/1920x1080-simple_background-22345.jpg);
+                background-image:url(http://previews.123rf.com/images/roystudio/roystudio1211/roystudio121100031/16163002-white-canvas-texture-background-with-horizontal-striips-pattern-Stock-Photo.jpg);
+                background-size:130px;
             }
              #navbar a{
                 text-decoration:none;
-                color: black;
+                color: white;
                 font-size:15px;
             }
             #navbar li{
@@ -18,14 +19,25 @@
                 text-decoration:none;
                 padding:10px;
                 border-style:groove;
-                background-image:url("https://s-media-cache-ak0.pinimg.com/originals/74/85/dd/7485dd35a00469f9bc612cdcdf0e05a2.jpg");
+                background-image:url("https://s-media-cache-ak0.pinimg.com/originals/4c/a2/85/4ca285a7d068b2ad6e2ec127eecbdaf4.png");
                 background-size:140px;
                 }
             #top-of-page{
                 text-align:center;
-                color:white;
+                color:black;
+            }
+            h2{
+                text-align:center;
+            }
+            table, tr, td {
+                border:2px groove black;
+            }
+            p{
+                text-align:center;
             }
         </style>
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
     </head>
 <body>
         <div id="top-of-page">
@@ -38,9 +50,186 @@
                 <li><a href="vind.html"><strong>Vindinium Page</strong></a></li>
                 <li><a href="bigProject.html"><strong>Big Project Page</strong></a></li>
             </ul>
-        </div>
         <h1>
             How To Page
         </h1>
+        <h3>
+            This is my how to page. On this page I will show you how I made my hardware page
+            by showing you all the code and the progress that was made during the pages 
+            development. For example I will be showing you how to code a navbar and how to 
+            change the backgrounds or just show you how to do the things done here.
+        </h3>
+        </div>
+        <div class="odd">
+            <table>
+                <tr>
+                    <td>
+                        <h2>
+                            How to code a navbar
+                        </h2>
+                    </td>
+                    <td>
+                        <div id="top-of-page">
+                            <ul id="navbar">
+                                <li><a href="aboutMe.html"><strong>About Me Page</strong></a></li>
+                                <li><a href="hardware.html"><strong>Hardware Page</strong></a></li>
+                                <li><a href="howTo.html"><strong>How To Page</strong></a></li>
+                                <li><a href="calc.html"><strong>Calulator Page</strong></a></li>
+                                <li><a href="toDo.html"><strong>To Do List Page</strong></a></li>
+                            </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="code">
+                            <pre>
+                                <code>
+&lt;div id=&quot;top-of-page&quot;&gt;
+    &lt;ul id=&quot;navbar&quot;&gt;
+        &lt;li&gt;&lt;a href=&quot;aboutMe.html&quot;&gt;&lt;strong&gt;About Me Page&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;hardware.html&quot;&gt;&lt;strong&gt;Hardware Page&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;howTo.html&quot;&gt;&lt;strong&gt;How To Page&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;calc.html&quot;&gt;&lt;strong&gt;Calulator Page&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;toDo.html&quot;&gt;&lt;strong&gt;To Do List Page&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;vind.html&quot;&gt;&lt;strong&gt;Vindinium Page&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;bigProject.html&quot;&gt;&lt;strong&gt;Big Project&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+                        </code>
+                    </pre>
+                </div>
+                </td>
+                <td>
+                    <h3>
+                        In order to code a navbar you will have to make an unordered
+                        list.Once you make the list you will use a "href" tag to
+                        link the web pages to one another as for the other web 
+                        pages. The strong tags will make the text look bigger 
+                        and bolder. The text and code below is the CSS section of
+                        the coding behind this.
+                    </h3>
+                </td>
+                <tr>
+                    <td>
+                        <pre>
+                            <code>
+#navbar a{
+    text-decoration:none;
+    color: black;
+    font-size:15px;
+}
+#navbar li{
+    Display:inline;
+    text-decoration:none;
+    padding:10px;
+    border-style:groove;
+    background-image:url("link goes here");
+    background-size:140px;
+}
+#top-of-page{
+    text-align:center;
+    color:black;
+}
+                            </code>
+                        </pre>
+                    </td>
+                    <td>
+                        <h3>
+                            In order to edit this bit of code to make it more pleasing
+                            to people you will be using CSS. You will have to edit
+                            two seperate parts, the list style and the link style.
+                            When you code under #navbar a you are coding to edit
+                            the way the words, or links look or are displayed. When 
+                            coding under #navbar li you are coding to edit the 
+                            entire list and the way it is laid out or the 
+                            background or the borders. I used #top-of-page to 
+                            edit the positioning of the navbar.
+                        </h3>
+                    </td>
+                </tr>
+            </div>
+    </table>
+    <br><br><br><br>
+    <table>
+        <tr>
+            <td>
+                <h2>
+                    How To Code A Flippable Image
+                </h2>
+                <p>
+                    Image to the right does not function properly!<br>
+                    Example is on the Hardware Page.
+                </p>
+            </td>
+            <td>
+                <div id="example">
+                    <div class="front">
+                        <img src="https://media.giphy.com/media/ujhp5PpXD4t7G/giphy.gif"
+                        width="570px" height="120px">
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <pre>
+                    <code>
+&lt;script src=&quot;https://code.jquery.com/jquery-2.1.4.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js&quot;&gt;&lt;/script&gt;
+                        
+&lt;div id=&quot;example&quot;&gt;
+    &lt;div class=&quot;front&quot;&gt;
+        &lt;img src=&quot;http://community.photostockplus.com/wp-content/uploads/horizontal.jpg&quot;
+        width=&quot;150px&quot; height=&quot;100px&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;back&quot;&gt;
+        &lt;img src=&quot;http://community.photostockplus.com/wp-content/uploads/horizontal.jpg&quot;
+        width=&quot;150&quot; height=&quot;100px&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                    </code>
+                </pre>
+            </td>
+            <td>
+                <h3>
+                    The top two lines of code here are used in order to connect
+                    my code to the server that I learned how to do this from.
+                    Once I got that into my code I needed to code an ID and two
+                    different classes that represent each side of the "card".
+                    When you create the class you will have to name them front
+                    and back because the server will be able to identify them. 
+                    Then inside that div you will add the contents you want on 
+                    each side.
+                </h3>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <pre>
+                    <code>
+&lt;script&gt;
+        $(&quot;#example&quot;).flip({
+            axis:'x',
+            trigger:'click',
+            reverse:true,
+        })
+&lt;/script&gt;
+                    </code>
+                </pre>
+            </td>
+            <td>
+                <h3>
+                    This code here is written in Jquery. This code is telling 
+                    the HTML above to flip on an X axis, you can change this to 
+                    flip on the x, y, or even the z axis. The next line is the 
+                    code that tells the image or text to flip on the trigger on 
+                    either when it is clicked or when the mouse hovers over the 
+                    div. The next line which is the reverse line is an optional 
+                    bit of code that makes the image switch its flipping pattern
+                    to a backwards flip.
+                </h3>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
