@@ -17,12 +17,12 @@
                 text-decoration:none;
                 padding:10px;
                 border-style:groove;
-                background-image:url("https://wallpaperscraft.com/image/drawing_surreal_colorful_psychedelic_62135_1920x1080.jpg");
+                background-image:url("http://www.planwallpaper.com/static/images/cool-wallpapers-hd: -8087px 8418px hd wallpapers.jpgx;");
                 background-size:200px;
                 }
                 body{
-                    background-image:url("https://images4.alphacoders.com/108/108964.jpg");
-                    background-size: 1200px;
+                    background-image:url("https://wallpaperscraft.com/image/space_sky_stars_79233_1920x1080.jpg");
+                    background-size: 1300px;
                 }
         </style>
     </head>
@@ -32,7 +32,7 @@
                <li><a href="aboutMe.html"><strong>About Me Page</strong></a></li>
                 <li><a href="hardware.html"><strong>Hardware Page</strong></a></li>
                 <li><a href="howTo.html"><strong>How To Page</strong></a></li>
-                <li><a href="calc.html"><strong>Calulator Page</strong></a></li>
+                <li><a href="calc.html"><strong>Calculator Page</strong></a></li>
                 <li><a href="toDo.html"><strong>To Do List Page</strong></a></li>
                 <li><a href="vind.html"><strong>Vindinium Page</strong></a></li>
                 <li><a href="bigProject.html"><strong>Big Project Page</strong></a></li>
@@ -40,9 +40,27 @@
             <h1>
                 To do List
             </h1>
-            <img src="http://emccochin.com/wp-content/uploads/2016/04/work-in-progress_01.png"
-            width="400px" height="400px">
+             
+             <form id="myform">
+    <div>
+        <div>
+            <h2>Add item:</h2>
         </div>
+        <input type="text" id="newitem" />
+        <select id="options">
+            <option value="none">None</option>
+            <option value="underline">Underline</option>
+            <option value="italics">Italics</option>
+            <option value="highlight">Highlight</option>
+        </select>
+        <input type="submit" />
+        
+        <br><br>
+        <h2><div id="todolist"></div></h2>
+    </div>
+    
+    </form>
+  </section>
     </body>
-    </head>
+    <script src="toDo.js"></script>
 </html>
