@@ -5,6 +5,8 @@ var todo = document.getElementById('todolist'),
 
 var options = document.getElementById('options');
 var newitem = document.getElementById('newitem');
+var submit = document.getElementById('submit');
+var celebrate = document.getElementById('celebrate');
 
 
 //How the Input the user entered is displayed
@@ -23,7 +25,9 @@ form.addEventListener('submit', function(evt) {
   else if(options.value == "highlight") {
     todo.innerHTML += '<div style="color: lime">' + text + '</div>';
   }
-
+  else if(options.value == "urgent") {
+    todo.innerHTML += '<div style=color:red>' + text + '</div>';
+  }
   evt.preventDefault();
 }, false);
 
