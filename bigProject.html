@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Big Project</title>
+    </head>
+    <style>
+        #top-of-page{
+                text-align:center;
+                color:white;
+            }
+             #navbar a{
+                text-decoration:none;
+                color: white;
+                font-size:15px;
+            }
+            #navbar li{
+                Display:inline;
+                text-decoration:none;
+                padding:10px;
+                border-style:groove;
+                background-image:url("http://3.bp.blogspot.com/_2UbsSBz9ckE/S5a0CY8FutI/AAAAAAAAA0M/J5RPSGoVgC4/s1600/Wood3_1600x1200.jpg");
+                background-size:100px;
+                }
+                body{
+                    background-image:url("http://www.planwallpaper.com/static/cache/14/b1/14b1d118a34f92adad45c6c7187ad0b4.jpg");
+                    background-size: 1300px;
+                }
+                canvas{
+                    background-image:url("http://more-sky.com/data/out/6/IMG_127705.png");
+                    border:2px solid;
+                }
+    </style>
+    <body>
+    <div id="top-of-page">
+            <ul id="navbar">
+               <li><a href="aboutMe.html"><strong>About Me Page</strong></a></li>
+                <li><a href="hardware.html"><strong>Hardware Page</strong></a></li>
+                <li><a href="howTo.html"><strong>How To Page</strong></a></li>
+                <li><a href="calc.html"><strong>Calculator Page</strong></a></li>
+                <li><a href="toDo.html"><strong>To Do List Page</strong></a></li>
+                <li><a href="vind.html"><strong>Vindinium Page</strong></a></li>
+                <li><a href="bigProject.html"><strong>Big Project Page</strong></a></li>
+            </ul>
+        <h1>
+            Big Project
+        </h1>
+        </div>
+        <script>
+            var gameArea={
+                canvas : document.createElement("canvas"),
+                start : function(){
+                    this.canvas.width=500;
+                    this.canvas.height=500;
+                    this.context = this.canvas.getContext("2d");
+                    document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+                    this.frameNo = 0;
+                    this.interval = setInterval(updateGameArea, 20);
+                    },
+                    clear : function() {
+                    this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
+                }
+            }
+        </script>
+    </body>
+</html>

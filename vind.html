@@ -5,11 +5,11 @@
          <style>
             #top-of-page{
                 text-align:center;
-                color:white
+                color:white;
             }
              #navbar a{
                 text-decoration:none;
-                color: White;
+                color: black;
                 font-size:15px;
             }
             #navbar li{
@@ -17,15 +17,31 @@
                 text-decoration:none;
                 padding:10px;
                 border-style:groove;
-                background-image:url("https://images2.alphacoders.com/204/204440.jpg");
-                background-size:200px;
+                background-image:url("http://more-sky.com/data/out/6/IMG_127747.png");
+                background-size:100px;
                 }
                 body{
-                    background-image:url("http://hdwallpaperbackgrounds.net/wp-content/uploads/2015/08/Colorful-Abstract-HD-Wallpapers.jpg");
-                    background-size: 1200px;
+                    background-color:black;
+                }
+                table, tr, td {
+                border:2px groove white;
+                color:white;
+                }
+                table{
+                background-image:url("https://www.janeclayton.co.uk/Product_Images/fullzoom/Arte-Mahlia-Loop-32502-01.jpg");
+                background-size:80px;
+                margin-left:auto;
+                margin-right:auto;
+                }
+                h2{
+                    text-align:center;
+                }
+                #example{
+                    text-align:center;
                 }
         </style>
     </head>
+    <body>
             <div id="top-of-page">
             <ul id="navbar">
                <li><a href="aboutMe.html"><strong>About Me Page</strong></a></li>
@@ -36,12 +52,189 @@
                 <li><a href="vind.html"><strong>Vindinium Page</strong></a></li>
                 <li><a href="bigProject.html"><strong>Big Project Page</strong></a></li>
             </ul>
-            <h1>
-                Vindinium
-            </h1>
-            <img src="http://emccochin.com/wp-content/uploads/2016/04/work-in-progress_01.png"
-            width="400px" height="400px">
+        <h1>
+            Vindinium
+        </h1>
         </div>
+    <div id="table">
+    <table>
+        <tr>
+            <td>
+                
+                <h2>
+                    What is vindinium?
+                </h2>
+                <div id="example">
+                    <img src="http://stratosprovatopoulos.com/wp-content/uploads/2014/02/screenshot.png"
+                    height="150px" width="250px">
+                </div>
+            </td>
+            <td>
+                <h3>
+                    Vindium is a game that is played by programming an AI. The player must 
+                    program<br>their bots to complete three tasks in order to win: Obtain mines, Go to Taverns
+                    and<br>to Attack Enemy AIs. 
+                </h3>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <h2>
+                    How I coded my AI.
+                </h2>
+                
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>
+                    Tactic explanation:
+                </h2>
+                <div id="example">
+                    <img src="https://image.flaticon.com/icons/png/512/53/53286.png"
+                    height="150px">
+                </div>
+            </td>
+            <td>
+                <h2>
+                    I decided to program my bot to retreat from whatever danger 
+                    it is in when its health is lower than 50 to go to the 
+                    closest tavern. The next thing my bot is programmed to do 
+                    is to go to the closest Free Mine and make it his own. The
+                    third task my bot is programmed to do is  to attack the closest
+                    enemy bot.
+                </h2>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>
+                    How my Bot decides what to do:
+                </h2>
+                <h3>
+                    The code to the right is an if else statement setting <br> requirments 
+                    for the bot. My Bot's first priority is <br>to make sure it's health is above 50
+                    if the health is <br>lower than 50 it will perfrom the task "Tavern".
+                    <br>If my bot's Health is higher than 50 it will run the<br> task "Freemines",
+                    unless there is an enemy bot<br> which then it will run "closest Enemy".
+                </h3>
+                <h3>
+                    
+                </h3>
+            </td>
+            <td>
+                <pre>
+                    <code>
+var task;
+        task = "freemines"
+        if(bot.yourBot.life < 50){
+            task = "tavern"
+        }
+        else if(bot.freeMines.length < 2){
+            task = "closest Enemy"
+        }
+         else{
+             task = "freemines"
+         }
+                    </code>
+                </pre>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>
+                    How My Bot goes to Taverns<br>at less than 50 hp:
+                </h2>
+                <h3>
+                    Looking at the code here it is simply looking at the 
+                    <br>positions of all the taverns and determines which one
+                    is closer to my Bot wherever it is.Then console.logs
+                    that it id heading towards the closest Tavern. This 
+                    is simply how it does it. The matter of when it does this
+                    is in the if else statement above.
+                </h3>
+            </td>
+            <td>
+                <pre>
+                    <code>
+if (task === "tavern") {
+        var closestTavern = bot.taverns[0];
+        for(var i = 0; i < bot.taverns.length; i++) {
+            if(bot.findDistance(myPos, closestTavern) > bot.findDistance(myPos, bot.taverns[i])) {
+                closestTavern = bot.taverns[i];
+            }
+        }
+        console.log("Going to Tavern!");
+        myDir = bot.findPath(myPos, closestTavern);
+    }
+                    </code>
+                </pre>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>
+                    How my bot claims a Free Mine:
+                </h2>
+                <h3>
+                    My Bot is now looking past the fact that it's health is greater
+                    than 50 it will look at all the free mines positions. It then 
+                    determines which is closer to my bot. After it determines that
+                    it goes to that mine to make it their own. I decided to do it 
+                    this way because this piece of code will run at the beginning 
+                    of the game which means I will start getting gold very quickly
+                    and start winning the game.
+                </h3>
+            </td>
+            <td>
+                <pre>
+                    <code>
+ if(task === "freemines") {
+        var closestMine = bot.freeMines[0];
+        for(var i = 0; i < bot.freeMines.length; i++) {
+            if(bot.findDistance(myPos, closestMine) > bot.findDistance(myPos, bot.freeMines[i])) {
+                closestMine = bot.freeMines[i];
+            }
+        }
+        console.log("Claiming a Free Mine!");
+        myDir = bot.findPath(myPos, closestMine);
+    }
+                    </code>
+                </pre>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h2>
+                    How My Bot Attacks Enemies:
+                </h2>
+                <h3>
+                    When there are no longer any free mines and my bots health 
+                    is higher than 50 it will start looking to attack enemy bots.
+                    However it doesn't just attack any bot, it looks at each enemy
+                    bots array and determines which was closest and goes towards 
+                    them to eliminate them. The reason for this is that because my 
+                    bot 
+                </h3>
+            </td>
+            <td>
+                <pre>
+                    <code>
+ var closestEnemy = enemyBots[0];
+    for(i = 0; i < enemyBots.length; i++) {
+        if(bot.findDistance(myPos, closestEnemy.posArray) > bot.findDistance(myPos, enemyBots[i].posArray)) {
+            closestEnemy = enemyBots[i];
+        }
+    }
+if (task === "closest Enemy") {
+        console.log("Going Bezerk!");
+        myDir = bot.findPath(myPos, closestEnemy.posArray);
+    }
+                    </code>
+                </pre>
+            </td>
+        </tr>
+    </table>
+    </div>
     </body>
-    </head>
 </html>
